@@ -1,0 +1,23 @@
+{
+  "name": "microwave-library",
+  "version": "1.0.0",
+  "description": "微澜图书馆相关脚本",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RaeZhang0822/microwave-library.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RaeZhang0822/microwave-library/issues"
+  },
+  "homepage": "https://github.com/RaeZhang0822/microwave-library#readme",
+  "dependencies": {
+    "node-xlsx": "^0.23.0"
+  }
+}
