@@ -1,5 +1,6 @@
 import { autoGetCardNum, createCardForStudent } from "../apis.js";
 import { concurrencyController } from "../util.js";
+import { RULE_IDS } from "../const.js";
 
 export async function createCard(student) {
   const { name, grade, classNum, id } = student;
@@ -8,7 +9,7 @@ export async function createCard(student) {
     // 必填项
     name,
     card_num: cardNum,
-    borrow_rule_id: 59, // 借阅规则："学生 普通卡"
+    borrow_rule_id: RULE_IDS.NORMAL, // 借阅规则："学生 普通卡"
     gender: 3, // 性别：其它
     expire_time: "9999-01-01 00:00:00", // 永不过期
     grade,
@@ -46,3 +47,6 @@ export async function batchCreateCards(students) {
     });
   });
 }
+
+// todo 批量冻结卡
+export async function batchFreezeCards(cards) {}

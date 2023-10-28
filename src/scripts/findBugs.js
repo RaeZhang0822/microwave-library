@@ -25,3 +25,6 @@ async function addSchoolForCards() {
     }
   });
 }
+
+const res = await findDupNameCards();
+console.log(res);
