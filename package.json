@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/RaeZhang0822/microwave-library#readme",
   "dependencies": {
-    "node-xlsx": "^0.23.0"
+    "node-xlsx": "^0.23.0",
+    "qs": "^6.11.2"
   }
 }
